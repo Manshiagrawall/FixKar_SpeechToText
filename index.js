@@ -25,7 +25,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 // Your AssemblyAI API Key
-const assemblyApiKey = "ASSEMBLY_API_KEY"; // Replace with your AssemblyAI API key
+const assemblyApiKey = "25e132d4976a476da12b619244155f22"; // Replace with your AssemblyAI API key
 
 // Route to upload and convert M4A to MP3
 app.post('/upload', upload.single('file'), async (req, res) => {
